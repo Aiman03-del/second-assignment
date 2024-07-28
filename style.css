@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* default styles*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 90%;
+}
+.active-button {
+  padding: 8px 20px 8px 20px;
+  border-radius: 50px;
+  background-color: rgb(230, 83, 60);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+/* header section */
+header {
+  background: linear-gradient(90deg, rgb(17, 17, 17), rgba(119, 119, 119, -0.5)),
+    linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, -0.5)),
+    linear-gradient(270deg, rgb(17, 17, 17), rgba(119, 119, 119, -0.5)),
+    linear-gradient(360deg, rgb(17, 17, 17), rgba(119, 119, 119, -0.5));
+}
+
+.logo {
+  color: rgb(230, 83, 60);
+  font-size: 2.5rem;
+}
+
+nav {
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-options {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  align-items: center;
+}
+.nav-options a {
+  text-decoration: none;
+  color: white;
+}
+
+/* hero section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  padding: 150px;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  color: rgba(255, 255, 255);
+  font-weight: 900;
+}
+.shape {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-style: normal;
+}
+.hero-content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  line-height: 24px;
+}
+.buttons {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.button {
+  color: rgba(255, 255, 255);
+  padding: 8px 20px 8px 20px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255);
+  background: rgba(17, 17, 17, 0.041);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.hero-image {
+  position: relative;
+  display: inline-block;
+  padding: 80px;
+}
+.workout-badge {
+  position: absolute;
+  top: 300px;
+  right: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.workout-badge h3 {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255);
+  font-weight: 900;
+}
+.workout-badge p {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+}
+
+.tutorial-badge {
+  position: absolute;
+  bottom: 150px;
+  left: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.tutorial-badge h3 {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255);
+  font-weight: 900;
+}
+.tutorial-badge p {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+}
