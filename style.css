@@ -301,11 +301,11 @@ main {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 
 .bmi-calculator-form input {
-  width: 85%;
+  width: 83%;
   padding: 10px;
   border: 1px solid #555;
   border-radius: 5px;
@@ -331,6 +331,36 @@ main {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* .bmi-calculator-form button:hover {
-  background-color: #ff1c1c;
-} */
+/* Team styles */
+.team {
+  padding: 50px;
+  text-align: center;
+}
+.team-member {
+  margin: 0 auto;
+  width: 80%;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+}
+.trainer img {
+  margin: 0 auto;
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+}
+.trainer h3 {
+  position: absolute;
+  margin-top: -60px;
+  margin-left: 45px;
+  color: #ffffff;
+}
+.trainer p {
+  position: absolute;
+  margin-top: -35px;
+  margin-left: 45px;
+  color: rgba(255, 255, 255, 0.5);
+}
