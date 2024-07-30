@@ -23,6 +23,9 @@
           <li><a href="/contact">Contact</a></li>
           <li><a href="/about">About</a></li>
         </ul>
+        <div class="menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
       <section class="hero">
         <div class="hero-content">
@@ -46,11 +49,128 @@
             <p>Free Workout Videos</p>
           </div>
           <div class="tutorial-badge">
-            <h3>350+</h3>
-            <p>Video tutorial</p>
+            <div class="circle"><i class="fa-solid fa-circle"></i></div>
+            <div class="badge-content">
+              <h3>350+</h3>
+              <p>Video tutorial</p>
+            </div>
           </div>
         </div>
       </section>
     </header>
+    <main>
+      <section class="habit">
+        <h3 class="section-title">Change Your Habits</h3>
+        <p class="section-description">
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym.
+        </p>
+        <div class="fitness">
+          <div class="fitness-category">
+            <img src="images/image 2.png" alt="" />
+            <h3>Movement</h3>
+            <p>We believe fitness should be accessible to everyone</p>
+          </div>
+          <div class="fitness-category">
+            <img src="images/image 3.png" alt="" />
+            <h3>Time</h3>
+            <p>We believe fitness should be accessible to everyone</p>
+          </div>
+          <div class="fitness-category">
+            <img src="images/image 4.png" alt="" />
+
+            <h3>Practice</h3>
+            <p>We believe fitness should be accessible to everyone</p>
+          </div>
+          <div class="fitness-category">
+            <img src="images/image 5.png" alt="" />
+            <h3>Weight Loss</h3>
+            <p>We believe fitness should be accessible to everyone</p>
+          </div>
+        </div>
+      </section>
+      <section class="run">
+        <div class="run-content">
+          <h3>Run an Extra Mile Easily</h3>
+          <p>
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym. With hundreds of
+            professional workouts.
+          </p>
+          <button class="active-button">Join Now</button>
+        </div>
+        <div class="run-image"><img src="images/run.jpg" alt="" /></div>
+      </section>
+      <section class="bmi-calculator">
+        <div class="bmi-calculator-heading">
+          <h3 class="section-title">BMI Calculator</h3>
+          <p class="section-description">
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym.
+          </p>
+        </div>
+        <div class="bmi-calculator-content">
+          <div class="bmi-calculator-chart">
+            <h2>BMI Calculator Chart</h2>
+            <table class="bmi-chart">
+              <tr>
+                <th>BMI</th>
+                <th>Weight Status</th>
+              </tr>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Healthy</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td>30.0 - and Above</td>
+                <td>Obese</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="bmi-calculator-form">
+            <h2>Calculate your BMI</h2>
+            <form>
+              <input
+                type="text"
+                id="height"
+                name="height"
+                placeholder="Height"
+              />
+              <input
+                type="text"
+                id="weight"
+                name="weight"
+                placeholder="Weight"
+              />
+              <input type="text" id="age" name="age" placeholder="Age" />
+              <select id="sex" name="sex">
+                <option value="" disabled selected>Sex</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <select id="activity" name="activity" class="activity">
+                <option value="" disabled selected>
+                  Select an activity factor
+                </option>
+                <option value="sedentary">Sedentary</option>
+                <option value="light">Light</option>
+                <option value="moderate">Moderate</option>
+                <option value="active">Active</option>
+              </select>
+              <button type="submit" class="active-button">Calculate</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

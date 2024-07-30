@@ -13,18 +13,20 @@
 }
 .container {
   width: 90%;
+  padding: 10px;
 }
 .active-button {
   padding: 8px 20px 8px 20px;
   border-radius: 50px;
   background-color: rgb(230, 83, 60);
   border: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   color: #ffffff;
 }
 /* header section */
 header {
+  width: 100%;
   background: linear-gradient(90deg, rgb(17, 17, 17), rgba(119, 119, 119, -0.5)),
     linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, -0.5)),
     linear-gradient(270deg, rgb(17, 17, 17), rgba(119, 119, 119, -0.5)),
@@ -43,21 +45,25 @@ nav {
   align-items: center;
 }
 .nav-options {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 4px 35px 4px 4px;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 5rem;
   align-items: center;
 }
 .nav-options a {
   text-decoration: none;
   color: white;
 }
-
+.menu {
+  display: none;
+}
 /* hero section */
 .hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -82,7 +88,7 @@ nav {
   line-height: 24px;
 }
 .buttons {
-  margin: 10px 0;
+  margin: 15px 0;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -98,43 +104,233 @@ nav {
 }
 .hero-image {
   position: relative;
-  display: inline-block;
   padding: 80px;
 }
-.workout-badge {
+.workout-badge,
+.tutorial-badge {
   position: absolute;
-  top: 300px;
-  right: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 15px;
   background: rgba(255, 255, 255, 0.1);
 }
+
+.workout-badge {
+  top: 300px;
+  right: 20px;
+}
+
 .workout-badge h3 {
   font-size: 1.5rem;
   color: rgba(255, 255, 255);
   font-weight: 900;
 }
+
 .workout-badge p {
   color: rgba(255, 255, 255, 0.5);
   line-height: 24px;
 }
 
 .tutorial-badge {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   bottom: 150px;
   left: 0px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 15px 40px;
-  background: rgba(255, 255, 255, 0.1);
 }
-.tutorial-badge h3 {
+
+.circle i {
+  color: #e6533c;
+  font-size: 1.5rem;
+}
+
+.badge-content h3 {
   font-size: 1.5rem;
   color: rgba(255, 255, 255);
   font-weight: 900;
 }
-.tutorial-badge p {
+
+.badge-content p {
   color: rgba(255, 255, 255, 0.5);
-  line-height: 24px;
 }
+
+@media screen and (max-width: 576px) {
+  nav {
+    margin: 0 20px;
+  }
+
+  .nav-options {
+    display: none;
+  }
+  .menu {
+    display: block;
+    font-size: 3.5rem;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+  }
+  .hero {
+    flex-wrap: wrap;
+  }
+  .hero-content {
+    padding: 50px;
+  }
+
+  .hero-image {
+    margin: 0px auto;
+  }
+}
+/* section styles */
+.section-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  line-height: 50px;
+}
+.section-description {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 50px;
+}
+main {
+  background: rgb(17, 17, 17);
+}
+.habit {
+  text-align: center;
+}
+.fitness {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+.fitness img {
+  width: 50%;
+  border-radius: 50%;
+}
+.fitness-category {
+  padding: 50px;
+}
+.fitness-category h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  line-height: 40px;
+}
+.fitness-category p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.run {
+  margin: 0 auto;
+  max-width: 70%;
+  background: rgb(34, 34, 34);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+}
+.run-content {
+  padding: 50px;
+}
+.run-content h3 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  line-height: 50px;
+}
+.run-content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+.run-content button {
+  margin: 30px 0;
+}
+.run-image {
+  padding: 50px;
+}
+.run-image img {
+  width: 100%;
+  border-radius: 50px;
+}
+.bmi-calculator-heading {
+  padding: 50px;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.bmi-calculator-content {
+  display: flex;
+  background-color: #444;
+}
+
+.bmi-calculator-chart {
+  padding: 80px;
+  width: 50%;
+}
+.bmi-calculator-form {
+  padding: 80px;
+  width: 50%;
+}
+
+.bmi-calculator-form h2,
+.bmi-calculator-chart h2 {
+  font-size: 1.2em;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bmi-chart {
+  margin: 0 auto;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.bmi-chart th {
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+.bmi-chart td {
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+.bmi-calculator-form form {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.bmi-calculator-form input {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #666;
+  color: white;
+  outline: none;
+}
+.bmi-calculator-form select {
+  width: 92%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #666;
+  color: white;
+  outline: none;
+}
+
+.bmi-calculator-form select.activity {
+  grid-column: span 2;
+  width: 96%;
+}
+.bmi-calculator-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* .bmi-calculator-form button:hover {
+  background-color: #ff1c1c;
+} */
