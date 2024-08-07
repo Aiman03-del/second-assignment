@@ -116,7 +116,7 @@ nav {
 
 .workout-badge {
   top: 200px;
-  right: 0px;
+  right: 5px;
 }
 .tutorial-badge {
   display: flex;
@@ -269,14 +269,14 @@ main {
 }
 .bmi-calculator-form form {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 10px;
 }
 
 .bmi-calculator-form input {
-  width: 83%;
+  width: 150px;
   padding: 10px;
   border: 1px solid #555;
   border-radius: 5px;
@@ -285,7 +285,7 @@ main {
   outline: none;
 }
 .bmi-calculator-form select {
-  width: 92%;
+  width: 172px;
   padding: 10px;
   border: 1px solid #555;
   border-radius: 5px;
@@ -296,7 +296,7 @@ main {
 
 .bmi-calculator-form select.activity {
   grid-column: span 2;
-  width: 96%;
+  width: 509px;
 }
 .bmi-calculator-form input::placeholder {
   color: rgba(255, 255, 255, 0.6);
