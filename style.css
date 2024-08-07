@@ -72,7 +72,7 @@ nav {
 }
 
 .hero-content h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: rgba(255, 255, 255);
   font-weight: 900;
 }
@@ -104,7 +104,6 @@ nav {
 }
 .hero-image {
   position: relative;
-  padding: 80px;
 }
 .workout-badge,
 .tutorial-badge {
@@ -116,10 +115,16 @@ nav {
 }
 
 .workout-badge {
-  top: 300px;
-  right: 20px;
+  top: 200px;
+  right: 0px;
 }
-
+.tutorial-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  bottom: 50px;
+  left: -100px;
+}
 .workout-badge h3 {
   font-size: 1.5rem;
   color: rgba(255, 255, 255);
@@ -129,14 +134,6 @@ nav {
 .workout-badge p {
   color: rgba(255, 255, 255, 0.5);
   line-height: 24px;
-}
-
-.tutorial-badge {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  bottom: 150px;
-  left: 0px;
 }
 
 .circle i {
@@ -154,32 +151,6 @@ nav {
   color: rgba(255, 255, 255, 0.5);
 }
 
-@media screen and (max-width: 576px) {
-  nav {
-    margin: 0 20px;
-  }
-
-  .nav-options {
-    display: none;
-  }
-  .menu {
-    display: block;
-    font-size: 3.5rem;
-    padding: 20px;
-    cursor: pointer;
-    color: white;
-  }
-  .hero {
-    flex-wrap: wrap;
-  }
-  .hero-content {
-    padding: 50px;
-  }
-
-  .hero-image {
-    margin: 0px auto;
-  }
-}
 /* section styles */
 .section-title {
   font-size: 2.5rem;
@@ -196,6 +167,7 @@ main {
 }
 .habit {
   text-align: center;
+  padding: 50px;
 }
 .fitness {
   display: grid;
@@ -228,7 +200,7 @@ main {
   border-radius: 50px;
 }
 .run-content {
-  padding: 50px;
+  padding: 20px;
 }
 .run-content h3 {
   color: #ffffff;
@@ -239,15 +211,14 @@ main {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.2rem;
   line-height: 25px;
+  padding: 10px 0;
 }
 .run-content button {
   margin: 30px 0;
 }
-.run-image {
-  padding: 50px;
-}
-.run-image img {
-  width: 100%;
+.run img {
+  padding: 10px;
+  width: 40%;
   border-radius: 50px;
 }
 .bmi-calculator-heading {
@@ -260,16 +231,15 @@ main {
 }
 .bmi-calculator-content {
   display: flex;
+  align-items: center;
   background-color: #444;
 }
 
+.bmi-calculator-form,
 .bmi-calculator-chart {
-  padding: 80px;
+  margin: 0 auto;
   width: 50%;
-}
-.bmi-calculator-form {
-  padding: 80px;
-  width: 50%;
+  padding: 50px;
 }
 
 .bmi-calculator-form h2,
@@ -281,20 +251,21 @@ main {
 }
 
 .bmi-chart {
-  margin: 0 auto;
-  width: 90%;
+  width: 100%;
   border-collapse: collapse;
 }
 
 .bmi-chart th {
   color: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px;
+  padding: 10px 35px;
+  font-size: 1.2rem;
 }
 .bmi-chart td {
   color: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px;
+  padding: 10px 35px;
+  font-size: 1rem;
 }
 .bmi-calculator-form form {
   margin: 0 auto;
@@ -338,29 +309,80 @@ main {
 }
 .team-member {
   margin: 0 auto;
-  width: 80%;
-  padding: 50px;
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 25px;
 }
 .trainer img {
   margin: 0 auto;
-  width: 300px;
-  height: 250px;
+  width: 80%;
+  height: 75%;
   border-radius: 20px;
 }
 .trainer h3 {
   position: absolute;
   margin-top: -60px;
-  margin-left: 45px;
+  margin-left: 55px;
   color: #ffffff;
+  font-size: 1.5rem;
 }
 .trainer p {
   position: absolute;
   margin-top: -35px;
-  margin-left: 45px;
+  margin-left: 55px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+}
+
+/* footer styles */
+footer {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.footer-logo,
+.footer-links {
+  flex: 1;
+  text-align: left;
+  padding: 50px;
+}
+.footer-logo p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-links h3 {
+  margin-bottom: 10px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li {
+  margin: 5px 0;
+}
+.footer-links li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.footer-links li a:hover {
+  color: white;
+}
+.footer-bottom {
+  margin: 0 auto;
+  width: 80%;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+.footer-bottom p {
   color: rgba(255, 255, 255, 0.5);
 }
