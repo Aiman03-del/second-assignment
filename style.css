@@ -251,7 +251,7 @@ main {
 }
 
 .bmi-chart {
-  width: 100%;
+  margin: 0 auto;
   border-collapse: collapse;
 }
 
